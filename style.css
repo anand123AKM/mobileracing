@@ -1,0 +1,150 @@
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  #p1 {
+    height: 190px;
+    width: 65px;
+    position: relative;
+    top: 340px;
+    cursor: pointer;
+  }
+
+  .animate {
+    animation-name: jack1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes jack1 {
+    0% {
+      top: 340px;
+    }
+
+    30% {
+      top: 125px;
+    }
+
+    65% {
+      top: 167px;
+    }
+
+    80% {
+      top: 250px;
+    }
+
+    100% {
+      top: 340px;
+    }
+  }
+
+  #p2 {
+    height: 80px;
+    width: 59px;
+    position: relative;
+    top: 153px;
+    left: 500px;
+  }
+
+  .p2 {
+    animation-name: jack2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes jack2 {
+    0% {
+      left: 500px;
+    }
+
+    100% {
+      left: -80%;
+    }
+  }
+
+  #p4 {
+    position: relative;
+    border: 1px solid red;
+    top: 20px;
+    display: block;
+    width: 125px;
+    margin-left: 45px;
+    background-color: pink;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #p3 {
+    position: relative;
+    border: 1px solid red;
+    top: 20px;
+    display: block;
+    width: 125px;
+    margin-left: 5px;
+    background-color: pink;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .divSR {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #videoBG {
+    width: 500px;
+    height: 400px;
+    background: url("back.jpg");
+    background-size: 100% 100%;
+    animation: repeatBG 1s linear infinite;
+    background-repeat: repeat-x;
+  }
+
+  @keyframes repeatBG {
+    0% {
+      background-position: 400px;
+    }
+
+    100% {
+      background-position: 0px;
+    }
+  }
+
+  #n1 {
+    position: relative;
+    top: 40px;
+
+    margin-left: 110px;
+  }
+
+  @media screen and (max-width: 600px) {
+    #n1 {
+      text-align: center;
+      margin-left: 5px;
+    }
+
+    #p4 {
+      margin-left: 75px;
+    }
+  }
+
+  #div {
+    border: 1px solid red;
+    height: 400px;
+    width: 500px;
+  }
+
+  #b42{
+    position: relative;
+      border: 1px solid red;
+      top: 20px;
+      display: block;
+      width: 125px;
+      margin-left: 5px;
+      background-color: pink;
+      text-align: center;
+      cursor: pointer;
+  }
