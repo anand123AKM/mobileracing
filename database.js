@@ -8,7 +8,7 @@ const cors = require("cors");
 var connection = mysql2.createConnection({
   host: "localhost",
   user: "root",
-  password: "#Anand_7Maurya16",
+  password: "",
   database: "highscore",
 });
 
